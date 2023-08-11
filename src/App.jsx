@@ -24,7 +24,7 @@ const App = () => {
     try {
       const completions = await apiClient.createCompletion({
         model: "text-davinci-003",
-        prompt: `For which country or city you want traveltips for: ${prompt} Write this in a way that is inspiring and fun with details as in trotter`,
+        prompt: `I am your travelagent, where are you going?: ${prompt} Write this in a way that is inspiring and fun with details as in trotter`,
         max_tokens: 880,
         temperature: 0.7,
         top_p: 1,
